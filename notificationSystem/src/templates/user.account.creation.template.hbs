@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Welcome to {{appName}}</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333333;
+      }
+      p {
+        color: #555555;
+        line-height: 1.5;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #0078d7;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #999999;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Welcome, {{firstName}}!</h1>
+      <p>
+        Thank you for creating an account with
+        <strong>{{appName}}</strong>. We’re excited to have you on board!
+      </p>
+      <p>
+        To get started, please verify your email address by clicking the button
+        below:
+      </p>
+      <a href='{{verificationLink}}' class='button'>Verify Email</a>
+      <p>
+        If you didn’t create this account, you can safely ignore this email.
+      </p>
+      <div class='footer'>
+        &copy;
+        {{year}}
+        {{appName}}. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
